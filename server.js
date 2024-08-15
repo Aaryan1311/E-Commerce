@@ -3,9 +3,13 @@ import  colors from 'colors'; //color in console
 import dotenv from 'dotenv'; //hide confidential data
 import morgan from 'morgan';
 import connectDB from './config/db.js';
+import authRoutes from './routes/authRoute.js'
 
 //configure env
 dotenv.config();
+
+//database config
+connectDB();
 
 //rest object
 const app = express();
@@ -17,8 +21,9 @@ const port = process.env.port;
 app.use(express.json())
 app.use(morgan('dev'))
  
-//database config
-connectDB();
+//routes
+app.use('/api/v1/auth',authRoutes)
+
 
 //rest api 
 app.get('/',(req,res) => {
