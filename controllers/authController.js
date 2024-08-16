@@ -91,7 +91,7 @@ export const loginController = async (req,res) => {
         if(!user){
             return res.status(404).send({
                 success: false,
-                messgse: "Email does not exist, Please Signup"
+                message: "Email does not exist, Please Signup"
             })
         }
 
@@ -133,4 +133,11 @@ export const loginController = async (req,res) => {
         })
     }
 };
+
+
+//test controller
+
+export const testController = (req,res) => {
+    res.send('Protected Route')
+}
 
