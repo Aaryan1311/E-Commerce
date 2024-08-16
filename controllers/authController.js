@@ -1,5 +1,6 @@
-import { hashPassword } from "../helpers/authHelper.js";
+import { hashPassword, comparePassword } from "../helpers/authHelper.js";
 import userModel from "../models/userModel.js"
+import jwt from "jsonwebtoken";
 
 export const registerController = async(req,res) => {
     try {
@@ -67,7 +68,69 @@ export const registerController = async(req,res) => {
         res.status(500).send({
             success: false,
             message: "SignUp Failed",
-
+            error,
         })
     }
 };
+
+
+export const loginController = async (req,res) => {
+    try {
+        const {email,password} = req.body
+
+        //validate
+        if(!email || !password){
+            res.send(201).send({
+                success: false,
+                message: "Invalid email or Password"
+            })
+        }
+
+        //check if email exist
+        const user = await userModel.findOne({email})
+        if(!user){
+            return res.status(404).send({
+                success: false,
+                messgse: "Email does not exist, Please Signup"
+            })
+        }
+
+        const match = await comparePassword(password,user.password);
+
+        //check if password is correct
+
+        if(!match){
+            return res.status(201).send({
+                success: false,
+                message: "Login Failed, Wrong Password",
+            })
+        }
+
+        const token = await jwt.sign({_id: user._id }, process.env.jwt_secret,{
+            expiresIn:  "7d",
+        });
+
+        res.status(200).send({
+            success: true,
+            messagee: "Login Successfully",
+            user:{
+                name: user.name,
+                email: user.email,
+                phone: user.phone,
+                address: user.address,
+            },
+            token,
+
+        })
+
+
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({
+            success: false,
+            message: "Login Failed",
+            error,
+        })
+    }
+};
+
