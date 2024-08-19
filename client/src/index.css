@@ -7,5 +7,51 @@
     box-sizing: border-box;  
 }
 
-/* font-family: 'Poppins' , sans-serif; */
-/* font-family: '' */
+/*nav bar css*/
+.navbar{
+    background: black;
+}
+.navbar .navbar-brand{
+    font-family: "Permanent Marker", cursive;
+    margin-left: 6rem;
+    margin-right: 4rem;
+    font-size: 40px;
+}
+
+.navbar .navbar-brand .brand-name-1{
+    color: rgb(245, 45, 45);
+}
+.navbar .navbar-brand .brand-name-2{
+    color: #fff;
+}
+
+.navbar .navbar-brand .brand-name-1:hover{
+    color: #fff;
+    transition: 0.4s;
+}
+.navbar .navbar-brand .brand-name-2:hover{
+    color: rgb(245, 45, 45);
+    transition: 0.4s;
+}
+
+
+.rounded-search-bar {
+    border-radius: 20px; 
+    width: 100vh;
+}
+
+.nav-item{
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.nav-link{
+   color: #fff;
+}
+
+.nav-link:hover{
+    color: rgb(245, 45, 45);
+ }
+
+ .navbar-nav .active {
+    color: red !important;
+  }

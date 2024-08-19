@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout/Layout'
 
-const HomePage = () => {
+const Policies = () => {
   return (
     <Layout>
-    <h1>HomePage</h1>
+      <h1>Privacy Policy Page</h1>
     </Layout>
   )
 }
 
-export default HomePage
-
+export default Policies

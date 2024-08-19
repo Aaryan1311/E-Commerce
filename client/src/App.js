@@ -1,13 +1,19 @@
-import './App.css';
-import Layout from './components/layout/Layout.js';
-import layout from "./components/layout/Layout.js"
+import { Routes,Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Policies from "./pages/Policies";
+import PagenotFound from "./pages/PagenotFound";
 function App() {
   return (
     <>
-    <Layout>
-    <h1>E-Commerce App</h1>
-    </Layout>
-    
+    <Routes>
+      <Route path="/" element = {<HomePage/>}/>
+      <Route path="/about" element = {<About/>}/>
+      <Route path="/contact" element = {<Contact/>}/>
+      <Route path="/policy" element = {<Policies/>}/>
+      <Route path="*" element = {<PagenotFound/>}/>
+    </Routes>
     </>
   );
 }

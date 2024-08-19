@@ -1,11 +1,12 @@
 import React from "react";
 
+
 const Footer = () => {
   return (
     <div className="Footer">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 col-lg-5 col-12 ft-1 mb-4">
+          <div className="col-md-8 col-lg- col-12 ft-1 mb-4">
             <h3>
               <span>Aaryan </span>Tripathi
             </h3>
