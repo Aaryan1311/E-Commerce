@@ -9,7 +9,6 @@
 /*nav bar css*/
 .navbar {
   background: rgba(0, 0, 0, 0.967);
-  
 }
 .navbar .navbar-brand {
   font-family: "Permanent Marker", cursive;
@@ -18,22 +17,18 @@
   font-size: 40px;
 }
 
-
 .navbar .navbar-brand .brand-name-1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 0px 10px rgb(0, 4, 255);
-    /* filter: blur(1.5rem); */
-  }
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 0px 10px rgb(0, 4, 255);
+  /* filter: blur(1.5rem); */
+}
 
-  .navbar .navbar-brand .brand-name-1:hover {
-    
-    text-shadow: 2px 0px 10px rgb(245, 168, 3);
+.navbar .navbar-brand .brand-name-1:hover {
+  text-shadow: 2px 0px 10px rgb(245, 168, 3);
 
-    /* filter: blur(1.5rem); */
-  }
+  /* filter: blur(1.5rem); */
+}
 
-
-  
 .navbar .navbar-brand .brand-name-2 {
   color: rgb(245, 149, 5);
   text-shadow: 2px 0px 10px rgb(0, 4, 255);
@@ -78,7 +73,7 @@
 .navbar-nav .active {
   color: rgb(245, 149, 5) !important;
 }
-.active{
-    border-bottom: 2px solid white;
-    transition: 0.2s;
+.active {
+  border-bottom: 2px solid white;
+  transition: 0.2s;
 }

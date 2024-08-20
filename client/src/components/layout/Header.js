@@ -18,7 +18,9 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <Link to={"/"} className="navbar-brand">
-            <span className="brand-name-1"><i class="fa-solid fa-bag-shopping"></i></span>
+            <span className="brand-name-1">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </span>
             <span className="brand-name-2">Trend</span>
             <span className="brand-name-3">Era</span>
           </Link>
@@ -44,16 +46,15 @@ const Header = () => {
                 <span className="sr-only">(current )</span>
               </NavLink>
             </li>
-
             <li className="nav-item">
-              <NavLink to={"/login"} className="nav-link" href="#">
-                <i class="fa-solid fa-right-to-bracket"></i> Login
+              <NavLink to={"/cart"} className="nav-link" href="#">
+                <i class="fa-solid fa-cart-shopping"></i> Cart(0)
               </NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink to={"/cart"} className="nav-link" href="#">
-                <i class="fa-solid fa-cart-shopping"></i> Cart(0)
+              <NavLink to={"/login"} className="nav-link" href="#">
+                <i class="fa-solid fa-user"></i> Login
               </NavLink>
             </li>
           </ul>

@@ -1,3 +1,5 @@
+/* Footer CSS */
+
 .Footer {
   background: #000;
   color: #fff;
@@ -41,17 +43,24 @@
   list-style: none;
   padding-left: 0;
 }
-.ft-2 ul Link {
+.ft-2 a {
   text-decoration: none;
-  padding: 3rem 0;
-  color: #fafafa !important;
-
+  text-decoration: none;
+  color: white;
 }
+
 .ft-2 ul li {
   padding: 0.5rem 0;
   color: #fefefe;
   font-weight: 500;
 }
+
+.ft-2 ul li :hover {
+  padding: 0.5rem 0;
+  color: rgb(245, 149, 5);
+  font-weight: 500;
+}
+
 .ft-3 p {
   font-weight: 500;
   padding: 0.1rem 0;
@@ -61,6 +70,83 @@
   padding-right: 0.5rem;
 }
 
-.quick-links{
-    color: #fff;
+/* Page not found css */
+
+.page-not-found html {
+  height: 100%;
+}
+
+.page-not-found body {
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-not-found .text h1 {
+  color: #011718;
+  margin-top: 150px;
+  font-size: 15em;
+  text-align: center;
+  text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7),
+    -10px 10px 0px rgba(0, 0, 0, 0.4), -15px 15px 0px rgba(0, 0, 0, 0.2);
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.page-not-found .text h2 {
+  color: black;
+  font-size: 5em;
+  text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-top: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.page-not-found .text h3 {
+  color: rgb(0, 0, 0);
+  margin-left: 90px;
+  font-size: 2em;
+  margin-top: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+}
+.page-not-found .torch {
+  margin: -150px 0 0 -150px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 0 9999em #0c0c0cee;
+  opacity: 1;
+  border-radius: 50%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+
+  &:after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    box-shadow: inset 0 0 40px 2px #000, 0 0 20px 4px rgba(13, 13, 10, 0.2);
+  }
+}
+
+.page-not-found {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+
+
+.glowing-btn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
