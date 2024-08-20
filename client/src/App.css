@@ -1,67 +1,66 @@
-.Footer{
-    background: #000 ;
+.Footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem 0;
+}
+.ft-1 {
+  padding-top: 0.5rem;
+}
+
+.ft-1 span {
+  color: red;
+}
+.ft-1 h3 {
+  font-weight: 900;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 1px;
+}
+.ft-1 p {
+  font-weight: 500;
+}
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: #dfdfdf;
+  color: rgb(245, 45, 45);
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-icons i:hover {
+  background: rgb(245, 45, 45);
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Footer h5 {
+  color: rgb(245, 45, 45);
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+.ft-2 ul Link {
+  text-decoration: none;
+  padding: 3rem 0;
+  color: #fafafa !important;
+
+}
+.ft-2 ul li {
+  padding: 0.5rem 0;
+  color: #fefefe;
+  font-weight: 500;
+}
+.ft-3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.1rem;
+}
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+.quick-links{
     color: #fff;
-    padding: 2rem 0;
 }
-.ft-1{
-    padding-top: 0.5rem;
-}
-
-.ft-1 span{
-    color: red;
-}
-.ft-1 h3{
-    font-weight: 900;
-    font-family: "Permanent Marker", cursive;
-    letter-spacing: 1px;
-}
-.ft-1 p{
-    font-weight: 500;
-}
-.footer-icons i{
-    padding: 0.4rem 0.5rem;
-    background: #dfdfdf;
-    color: rgb(245, 45, 45);
-    margin: 0 0.5rem;
-    border-radius:  50%;
-}
-
-.footer-icons i:hover{
-    background: rgb(245, 45, 45);
-    color: #fff;
-    transition: 0.3s;
-    cursor: pointer;
-
-}
-
-.Footer h5{
-    color: rgb(245, 45, 45);
-}
-
-.ft-2 ul{
-    list-style: none;
-    padding-left: 0;
-}
-.ft-2 ul a{
-    text-decoration: none;
-    padding: 3rem 0;
-    color: #000;
-}
-.ft-2 ul li{
-    padding: 0.5rem 0;
-    color: #fefefe;
-    font-weight: 500;
-}
-.ft-3 p{
-    font-weight: 500;
-    padding: 0.1rem 0;
-    font-size: 1.1rem;
-}
-.ft-3 i{
-    padding-right: 0.5rem;;
-    
-}
-
-
-
-

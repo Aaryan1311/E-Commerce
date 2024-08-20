@@ -1,12 +1,12 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 
 const Footer = () => {
   return (
     <div className="Footer">
       <div className="container">
         <div className="row">
-          <div className="col-md-8 col-lg- col-12 ft-1 mb-4">
+          <div className="col-md-8 col-lg-6 col-8 ft-1 mb-4">
             <h3>
               <span>Aaryan </span>Tripathi
             </h3>
@@ -21,28 +21,28 @@ const Footer = () => {
               <i class="fa-brands fa-linkedin-in"></i>
             </div>
           </div>
-          <div className="col-md-6 col-lg-3 col-12 ft-2">
+          <div className="quick-links col-md-6 col-lg-3 col-8 ft-2">
             <h5>Quick Links</h5>
             <ul>
               <li>
-                <a>Link1</a>
+                <Link to={"/about"}>About</Link>
               </li>
               <li>
-                <a>Link2</a>
+              <Link to={"/contact"}>Contacts</Link>
               </li>
               <li>
-                <a>Link3</a>
+              <Link to={"/Policies"}>Privacy and Policies</Link>
               </li>
               <li>
-                <a>Link4</a>
+              <Link to={"/"}>HomePage</Link>
               </li>
               <li>
-                <a>Link5</a>
+              <Link to={"/about"}>About</Link>
               </li>
             </ul>
           </div>
 
-          <div className="col-md-6 col-lg-4 col-12 ft-3">
+          <div className="col-md-6 col-lg-3 col-8 ft-3">
             <h5>Quick Links</h5>
             <p>
               <i class="fa-solid fa-phone-volume"></i> +91 1234567890
