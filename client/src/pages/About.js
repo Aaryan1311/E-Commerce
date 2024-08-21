@@ -1,12 +1,27 @@
-import React from 'react'
-import Layout from '../components/layout/Layout'
+import React from "react";
+import Layout from "../components/layout/Layout";
 
 const About = () => {
   return (
     <Layout>
-      <h1>About Page</h1>
-    </Layout>
-  )
-}
+     <div className="about-us">
+        <div className="container">
+          <div className="image-section">
+            <img
+              src={require("./page-assets/robo-image.jpeg")}
+              alt="Robot Image"
+              width={500}
+              height={500}
+            />
+          </div>
 
-export default About
+          <div className="text-section">
+           
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default About;
